@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=`dirname $0`
 
-./deployment/deploy.sh
+${SCRIPT_DIR}/deployment/deploy.sh
 
 SHA_SHORT=`git rev-parse --short HEAD`
 

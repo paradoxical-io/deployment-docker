@@ -3,7 +3,7 @@
 
 SCRIPT_DIR=`dirname $0`
 
-./deployment/setup-travis.sh
+${SCRIPT_DIR}/deployment/setup-travis.sh
 
 if [ -z "${DOCKER_EMAIL}" ]; then
     read -p "DOCKER_EMAIL=" DOCKER_EMAIL
